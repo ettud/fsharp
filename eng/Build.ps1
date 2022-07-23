@@ -450,7 +450,9 @@ try {
     $toolsetBuildProj = InitializeToolset
     TryDownloadDotnetFrameworkSdk
 
-    $nativeToolsDir = InitializeNativeTools
+    $nativeToolsDir = InitializeNativeTools)
+    $nativeToolsDir
+    write-host "NativeTools: $nativeToolsDir.values"
 
     if (-not (Test-Path variable:NativeToolsOnMachine)) {
         $env:PERL5Path = Join-Path "$nativeToolsDir" "perl\5.32.1.1\perl\bin\perl.exe"
