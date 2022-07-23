@@ -450,7 +450,7 @@ try {
     $toolsetBuildProj = InitializeToolset
     TryDownloadDotnetFrameworkSdk
 
-    $nativeToolsDir = InitializeNativeTools)
+    $nativeToolsDir = InitializeNativeTools
     $nativeToolsDir
     write-host "NativeTools: $nativeToolsDir.values"
 
